@@ -1,0 +1,5 @@
+{
+    "serverUrl": "http://localhost:8080",
+    "baseAgentAddress": "localhost",
+    "baseAgentPort": "8081"
+}
