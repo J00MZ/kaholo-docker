@@ -7,7 +7,7 @@ You can build an image yourself or pull a copy from my dockerhub repo (https://h
 
 To run the image use the following docker command:
 ```
-docker run -d -p 8080:8080 theletter/production-map:latest
+docker run -d -p 8080:8080 thelettere/production-map:latest
 ```
 
 All processes on the image are managed via supervisord and stdout is merged into the main container process.
