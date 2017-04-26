@@ -12,7 +12,8 @@ docker run -d -p 8080:8080 thelettere/production-map:latest
 
 If you want to make sure your mongodb data persists to your local machine you can do this:
 ```
-docker run -d -p 8080:8080 -v /home/<user>/production-map-mongo:/var/lib/mongodb thelettere/production-map:latest
+docker volume create --name production-map-mongo;
+docker run -d -p 8080:8080 -v production-map-mongo:/var/lib/mongodb thelettere/production-map:latest
 ```
 
 All processes on the image are managed via supervisord and stdout is merged into the main container process.
