@@ -39,3 +39,5 @@ docker run -d -p 8080:8080 --name=pmServer -v production-map-mongo:/var/lib/mong
 ```
 
 All processes on the image are managed via supervisord and stdout is merged into the main container process.
+
+Special Thanks for ericuldall who created the initial dockerfiles.
