@@ -20,7 +20,7 @@ docker run -d -p 8080:8080 --name="pmServer" pm/server
 ```
 
 Next build the base agent
-``
+```
 cd pm-base-agent
 docker build -t pm/base-agent .
 ```
@@ -33,8 +33,9 @@ docker run -d --link pmServer pm/base-agent
 edit the file with the relevant fields (server address, agent address, agent port)
 
 If you want to make sure your mongodb data persists to your local machine you can do this:
+
 ```
-docker volume create --name production-map-mongo;
+docker volume create --name production-map-mongo
 docker run -d -p 8080:8080 --name=pmServer -v production-map-mongo:/var/lib/mongodb pm/server
 ```
 
