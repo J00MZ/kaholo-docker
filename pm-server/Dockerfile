@@ -14,8 +14,6 @@ RUN npm install -g sails
 # Install production map server
 RUN git clone https://github.com/ProductionMap/production-map-server.git /var/www/production-map-server
 WORKDIR /var/www/production-map-server/production-map-server
-RUN git pull --rebase origin master
-RUN git checkout master
 RUN npm install
 
 # Configure supervisord

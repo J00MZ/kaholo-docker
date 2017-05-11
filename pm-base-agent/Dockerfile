@@ -13,8 +13,6 @@ RUN mkdir -p /var/log/supervisor
 # Install base agent for localhost
 RUN git clone https://github.com/ProductionMap/production-map-base-agent.git /var/www/production-map-base-agent
 WORKDIR /var/www/production-map-base-agent/production-map-base-agent
-RUN git pull --rebase origin master
-RUN git checkout master
 RUN npm install
 COPY ./baseagent.js conf/baseagent.js
 
