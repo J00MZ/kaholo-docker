@@ -3,8 +3,6 @@
 This is a dockerized implementation of production-map (http://www.productionmap.com/)
 Current implementation includes mongodb, production-map-server and production-map-base-agent.
 
-You can build an image yourself or pull a copy from my dockerhub repo (https://hub.docker.com/r/thelettere/production-map/)
-
 To build the images first enter the relevant folder for example pm-server
 ```
 cd pm-server
