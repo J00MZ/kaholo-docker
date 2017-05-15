@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 
 # Install system dependencies
 RUN apt-get update
-RUN apt-get install -y git python build-essential curl mongodb supervisor
+RUN apt-get install -y git python build-essential curl supervisor
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - 
 RUN apt-get install -y nodejs
 RUN mkdir -p /var/www
