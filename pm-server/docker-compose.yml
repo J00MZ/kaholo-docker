@@ -1,7 +1,11 @@
 version: "2"
+volumes:
+  production-map:
 services:
   db:
     image: mongo
+    volumes:
+        - production-map:/data/db
   web:
     build: .
     depends_on:
