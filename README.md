@@ -1,9 +1,9 @@
-# Production Map - Docker Config
+# Kaholo - Docker Config
 
-This is a dockerized implementation of production-map (http://www.productionmap.com/)
-Current implementation includes mongodb, production-map-server and production-map-base-agent.
+This is a dockerized implementation of Kaholo (https://kaholo.io/)
+Current implementation includes mongodb, kaholo-server and kaholo-agent.
 
-## Running pm server Using Docker compose
+## Running kaholo server Using Docker compose
 You can run the pm-server image using docker compose
 Navigate to the pm-server directory and run docker compose
 ```
